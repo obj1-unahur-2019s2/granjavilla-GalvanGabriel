@@ -1,18 +1,32 @@
 import wollok.game.*
 import hector.*
 import cultivos.*
+import oso.*
+import juegogranja.*
+import direcciones.*
 
 program farmville {
-	//  CONFIG	
-	game.title("FarmVille")
-	game.height(10)
-	game.width(10)
-	game.ground("ground.png")
+		
+	game.title(FarmVille)
+	game.height(10)altura
+	game.width(10)ancho
+	game.ground(ground.png)
 
-	//  VISUALES
- 	game.addVisualCharacter(hector)
- 	game.addVisualIn(new Maiz(), game.at(1, 1))
- 	
- 	//  COMIENZA
+
+
+
+    juegoGranja.configurarPersonajes()
+   juegoGranja.configurarTeclado()
+   
+ 
+   juegoGranja.configurarColisiones()
+  
+ 
+	juegoGranja.configurarAcciones()
+	
+
 	game.start()
+	
+	
+ 	
 }
